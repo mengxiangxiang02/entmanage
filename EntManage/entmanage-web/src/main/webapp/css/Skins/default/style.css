@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,html,ul,li,h3,span,p,dd,dl,dt{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+.clear{ clear:both;}
+body{ background:#eeeeee;}
+#head{ width:433px;height:70px;background: url(./images/head.gif) no-repeat;line-height:70px; text-align:center; margin:auto;font-size:20px;color:#fff; margin-top:100px;}
+#footer{ background:url('http://pic.static.sdo.com/info/logo_info.png') no-repeat center 30px;font-size:12px; width:840px;height:60px; line-height:35px;margin:auto; margin-top:10px;text-align:center; color:#8a8063;}
+#login{ background:url(./images/login_bg.gif) no-repeat left bottom; height:250px;width:433px;;margin:auto; font-size:12px;padding:10px 0;}
+#login table{ margin:auto; padding-top:5px;}
+#login .title{padding:15px; text-align:center; font-size:20px; font-weight:bold; font-family:微软雅黑; color:#888;}
+#login .title span{ line-height:23px; font-size:14px; font-weight:normal;padding:2px; font-family:黑体;}
+#login table td{ line-height:64px; height:64px;}
+#login table th{ text-align:right; font-weight:normal;}
+#login .login_btn{ background:url(./images/login_btn.gif) no-repeat; width:150px; height:40px; border:0; color:#fff; font-weight:bold; font-size:14px; cursor:pointer;}
+#login .login_btn:hover{background:url(./images/login_btn.gif) no-repeat left -40px;}
+.input220{ width:284px;line-height:29px; height:29px;background:url(./images/input_bg.gif) no-repeat; border:0; padding-left:10px;}
+.input284{ width:284px;line-height:25px; height:25px; }
+#login table td span{line-height:50px; font-size:16px; font-weight:normal;font-weight:bold;}
+#login table td img{padding-right:10px;}
+#login .message{ border:1px solid #ddd9ac; background:#fefce5; color:#f60; width:90%; margin:auto;padding:3px;}
+#login .pt{ text-align:center;color:#8a8063;}
+#login .pt a{ color:#026fc5;}

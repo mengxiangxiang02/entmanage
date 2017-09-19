@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="entmanage-dao" />
+        <module name="entmanage-domain" />
+        <module name="entmanage-service" />
+        <module name="entmanage-utils" />
+        <module name="entmanage-web" />
+        <module name="stock-dao" />
+        <module name="stock-domain" />
+        <module name="stock-service" />
+        <module name="stock-utils" />
+        <module name="stock-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="entmanage-dao" target="1.7" />
+      <module name="entmanage-domain" target="1.7" />
+      <module name="entmanage-root" target="1.7" />
+      <module name="entmanage-service" target="1.7" />
+      <module name="entmanage-utils" target="1.7" />
+      <module name="entmanage-web" target="1.7" />
+      <module name="stock-dao" target="1.7" />
+      <module name="stock-domain" target="1.7" />
+      <module name="stock-root" target="1.7" />
+      <module name="stock-service" target="1.7" />
+      <module name="stock-utils" target="1.7" />
+      <module name="stock-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
