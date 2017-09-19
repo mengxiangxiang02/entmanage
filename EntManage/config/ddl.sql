@@ -36,5 +36,17 @@ CREATE TABLE ent_info (
   GMT_CREATE timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   GMT_MODIFIED timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '数据更新时间',
   PRIMARY KEY (id),
-  UNIQUE KEY idx_account (entname) USING BTREE
+  UNIQUE KEY idx_ent_info (entname) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='企业信息';
+
+DROP TABLE IF EXISTS class_info;
+CREATE TABLE class_info (
+  id int(11) NOT NULL AUTO_INCREMENT,
+  classname varchar(30) NOT NULL COMMENT '班级名称	',
+  classyear varchar(200) NOT NULL COMMENT '班级年份',
+  remark  varchar(500) DEFAULT NULL COMMENT '备注',
+  GMT_CREATE timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  GMT_MODIFIED timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '数据更新时间',
+  PRIMARY KEY (id),
+  UNIQUE KEY idx_class_info (classname) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='班级信息';

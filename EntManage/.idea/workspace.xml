@@ -32,7 +32,105 @@
     <favorites_list name="stock-root" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ddl.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/ddl.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="41">
+              <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/domain/bean/ClassInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassInfoMapperImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/ClassInfoMapperImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassInfoMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/ClassInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="29" />
+              <folding>
+                <marker date="1505831150865" expanded="true" signature="1321:1448" ph="select from class_info" />
+                <marker date="1505831150865" expanded="true" signature="1675:1815" ph="select id, c... class_info" />
+                <marker date="1505831150865" expanded="true" signature="1892:1939" ph="select count... class_info" />
+                <marker date="1505831150865" expanded="true" signature="2159:2219" ph="delete from " />
+                <marker date="1505831150865" expanded="true" signature="2438:2743" ph="insert into class_info... " />
+                <marker date="1505831150865" expanded="true" signature="4156:4736" ph="update class... " />
+                <marker date="1505831150865" expanded="true" signature="4967:5272" ph="update class... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entInfoMapperImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/entInfoMapperImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entInfoMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/entInfoMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+              <folding>
+                <marker date="1505830164696" expanded="true" signature="1959:2180" ph="select from ent_info" />
+                <marker date="1505830164696" expanded="true" signature="2408:2642" ph="select id, e... ent_info" />
+                <marker date="1505830164696" expanded="true" signature="2719:2764" ph="select count... ent_info" />
+                <marker date="1505830164696" expanded="true" signature="2719:2765" ph="select count... stockinfo" />
+                <marker date="1505830164696" expanded="true" signature="2983:3041" ph="delete from " />
+                <marker date="1505830164696" expanded="true" signature="3258:3913" ph="insert into ent_info... " />
+                <marker date="1505830164696" expanded="true" signature="6472:7795" ph="update ent_i... " />
+                <marker date="1505830164696" expanded="true" signature="8024:8700" ph="update ent_i... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entInfoMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/entInfoMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,12 +147,14 @@
       <find>saveUserFun</find>
       <find>updateByPrimaryKeySelective</find>
       <find>io.chicken.ggs.dal.model.entInfo</find>
+      <find>pers.meng.domain.ClassInfo</find>
     </findStrings>
     <replaceStrings>
       <replace>entmanage</replace>
       <replace />
       <replace>企业信息录入</replace>
       <replace>pers.meng.domain.bean.entInfo</replace>
+      <replace>pers.meng.domain.bean.ClassInfo</replace>
     </replaceStrings>
     <dirStrings>
       <dir>E:\meng\资料\code\EntManage\stock-web</dir>
@@ -91,7 +191,6 @@
         <option value="$PROJECT_DIR$/entmanage-service/src/main/java/pers/meng/service/serviceimpl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/entmanage-web/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/entmanage-web/src/main/java/pers/meng/controller/login/LoginController.java" />
-        <option value="$PROJECT_DIR$/config/ddl.sql" />
         <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/domain/bean/entInfo.java" />
         <option value="$PROJECT_DIR$/entmanage-service/src/main/java/pers/meng/service/util/ConstructorMap.java" />
         <option value="$PROJECT_DIR$/entmanage-service/src/main/java/pers/meng/service/serviceinterface/UserInfoService.java" />
@@ -101,6 +200,11 @@
         <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/UserInfoMapperImpl.java" />
         <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/entInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/config/ddl.sql" />
+        <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/domain/bean/ClassInfo.java" />
+        <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/ClassInfoMapper.java" />
+        <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/ClassInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/ClassInfoMapperImpl.java" />
       </list>
     </option>
   </component>
@@ -204,93 +308,7 @@
             <path>
               <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceinterface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
+              <item name="entmanage-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -299,18 +317,42 @@
             <path>
               <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
+              <item name="entmanage-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meng" type="462c0819:PsiDirectoryNode" />
+              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
               <item name="EntManage" type="462c0819:PsiDirectoryNode" />
-              <item name="entmanage-web" type="462c0819:PsiDirectoryNode" />
+              <item name="entmanage-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meng" type="462c0819:PsiDirectoryNode" />
+              <item name="daointerface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
+              <item name="entmanage-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meng" type="462c0819:PsiDirectoryNode" />
+              <item name="daomapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock-root" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EntManage" type="462c0819:PsiDirectoryNode" />
+              <item name="entmanage-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="meng" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -337,8 +379,8 @@
       <recent name="pers.meng.daomapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\meng\资料\code\studentinput\entmanage\EntManage\entmanage-dao\src\main\java\pers\meng\daomapper" />
       <recent name="E:\meng\资料\code\studentinput\entmanage\EntManage\entmanage-dao\src\main\java\pers\meng\daointerface" />
+      <recent name="E:\meng\资料\code\studentinput\entmanage\EntManage\entmanage-dao\src\main\java\pers\meng\daomapper" />
       <recent name="E:\meng\资料\code\studentinput\entmanage\EntManage\entmanage-dao\src\main\java\pers\meng\domain\bean" />
       <recent name="E:\盛付通\源码开发\EntManage\entmanage-domain\src\main\java\pers\meng\domain\util" />
       <recent name="E:\盛付通\源码开发\EntManage\entmanage-web\src\main\webapp\pages\personInfo" />
@@ -830,12 +872,12 @@
       <workItem from="1505787081118" duration="6294000" />
       <workItem from="1505805577362" duration="8201000" />
       <workItem from="1505814055617" duration="48000" />
-      <workItem from="1505827208153" duration="3177000" />
+      <workItem from="1505827208153" duration="3954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24070000" />
+    <option name="totallyTimeSpent" value="24847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -870,7 +912,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40350878" sideWeight="0.6520619" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2968961" sideWeight="0.49226806" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32686782" sideWeight="0.49213484" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36853448" sideWeight="0.49213484" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2564433" sideWeight="0.5078652" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2204301" sideWeight="0.4974227" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -899,36 +941,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entmanage-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entmanage-domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entmanage-utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entmanage-web/src/main/java/pers/meng/param/BaseCtrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1148,14 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/ddl.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/entmanage-service/src/main/java/pers/meng/service/util/ConstructorMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1197,30 +1201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/entInfoMapperImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="48" column="2" lean-forward="true" selection-start-line="48" selection-start-column="2" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#1400#1401#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/entInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="59" column="30" lean-forward="true" selection-start-line="57" selection-start-column="2" selection-end-line="59" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/UserInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1229,10 +1209,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/ddl.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/domain/bean/ClassInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/entInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daointerface/ClassInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/entInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+        <state relative-caret-position="139">
+          <caret line="52" column="15" lean-forward="true" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
           <folding>
             <marker date="1505830164696" expanded="true" signature="1959:2180" ph="select from ent_info" />
             <marker date="1505830164696" expanded="true" signature="2408:2642" ph="select id, e... ent_info" />
@@ -1248,9 +1264,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/UserInfoMapperImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="-105">
           <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daomapper/ClassInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="72" column="29" lean-forward="false" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="29" />
+          <folding>
+            <marker date="1505831150865" expanded="true" signature="1321:1448" ph="select from class_info" />
+            <marker date="1505831150865" expanded="true" signature="1675:1815" ph="select id, c... class_info" />
+            <marker date="1505831150865" expanded="true" signature="1892:1939" ph="select count... class_info" />
+            <marker date="1505831150865" expanded="true" signature="2159:2219" ph="delete from " />
+            <marker date="1505831150865" expanded="true" signature="2438:2743" ph="insert into class_info... " />
+            <marker date="1505831150865" expanded="true" signature="4156:4736" ph="update class... " />
+            <marker date="1505831150865" expanded="true" signature="4967:5272" ph="update class... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/entInfoMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entmanage-dao/src/main/java/pers/meng/daoimpl/ClassInfoMapperImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
