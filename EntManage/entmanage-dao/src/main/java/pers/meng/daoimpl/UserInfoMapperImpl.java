@@ -6,6 +6,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import pers.meng.daointerface.UserInfoMapper;
 import pers.meng.domain.bean.UserInfo;
+
+import java.util.List;
+import java.util.Map;
+
 @Repository("userInfoMapper")
 public class UserInfoMapperImpl implements UserInfoMapper {
 	@Autowired
@@ -53,5 +57,13 @@ public class UserInfoMapperImpl implements UserInfoMapper {
 		// TODO Auto-generated method stub
 		return (UserInfo)sqlSession.selectOne("pers.meng.daoinerface.UserInfoMapper.selectByUserid", userid);
 	}
+	@Override
+	public List<UserInfo> selectByContion(Map map) {
+		return (List<UserInfo>)sqlSession.selectList("pers.meng.daointerface.UserInfoMapper.selectByContion", map);
+	}
 
+	@Override
+	public int selectCount(Map map) {
+		return (int)sqlSession.selectOne("pers.meng.daointerface.UserInfoMapper.count", map);
+	}
 }

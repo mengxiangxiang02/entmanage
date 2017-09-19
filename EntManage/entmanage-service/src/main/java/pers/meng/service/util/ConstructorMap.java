@@ -17,17 +17,8 @@ public class ConstructorMap {
 		Map<String, Object> MapDao = new HashMap<String, Object>();
 		MapDao.put("pageSize", limit + "");
 		MapDao.put("pageOffset", startIndex + "");
-		MapDao.put("sort", "stock_code");
-		MapDao.put("order", "desc");
-		if (!StringUtils.isEmpty(map.get("stockCode")==null?null:map.get("stockCode").toString())) {
-			MapDao.put("stockCode", map.get("stockCode"));
-		}
-		if (!StringUtils.isEmpty(map.get("stockName")==null?null:map.get("stockName").toString())) {
-			MapDao.put("stockName", map.get("stockName"));
-		}
-		if (!StringUtils.isEmpty(map.get("volumedate")==null?null:map.get("volumedate").toString())) {
-			MapDao.put("volumedate", map.get("volumedate"));
-		}
+
+
 		logger.info("processedMap" + MapDao);
 		return MapDao;
 	}

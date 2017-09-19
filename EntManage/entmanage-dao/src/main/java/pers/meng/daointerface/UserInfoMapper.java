@@ -2,6 +2,10 @@ package pers.meng.daointerface;
 
 import org.springframework.stereotype.Repository;
 import pers.meng.domain.bean.UserInfo;
+import pers.meng.domain.bean.entInfo;
+
+import java.util.List;
+import java.util.Map;
 
 public interface UserInfoMapper {
     /**
@@ -60,4 +64,8 @@ public interface UserInfoMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(UserInfo record);
+
+    List<UserInfo> selectByContion(Map map);
+
+    int  selectCount(Map map);
 }
