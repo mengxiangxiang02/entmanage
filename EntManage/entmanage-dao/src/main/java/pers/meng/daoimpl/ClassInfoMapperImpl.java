@@ -46,11 +46,11 @@ public class ClassInfoMapperImpl implements ClassInfoMapper {
 
     @Override
     public List<ClassInfo> selectByContion(Map map) {
-        return (List<ClassInfo>)sqlSession.selectList("pers.meng.daointerface.ClassInfoMapper.selectByContion", map);
+        return (List<ClassInfo>)sqlSession.selectList("pers.meng.daoinerface.ClassInfoMapper.selectByContion", map);
     }
 
     @Override
     public int selectCount(Map map) {
-        return (int)sqlSession.selectOne("pers.meng.daointerface.ClassInfoMapper.count", map);
+        return (int)sqlSession.selectOne("pers.meng.daoinerface.ClassInfoMapper.count", map);
     }
 }

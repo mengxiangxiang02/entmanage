@@ -48,11 +48,11 @@ public class entInfoMapperImpl implements entInfoMapper {
 
     @Override
     public List<entInfo> selectByContion(Map map) {
-        return (List<entInfo>)sqlSession.selectList("pers.meng.daointerface.entInfoMapper.selectByContion", map);
+        return (List<entInfo>)sqlSession.selectList("pers.meng.daoinerface.entInfoMapper.selectByContion", map);
     }
 
     @Override
     public int selectCount(Map map) {
-        return (int)sqlSession.selectOne("pers.meng.daointerface.entInfoMapper.count", map);
+        return (int)sqlSession.selectOne("pers.meng.daoinerface.entInfoMapper.count", map);
     }
 }

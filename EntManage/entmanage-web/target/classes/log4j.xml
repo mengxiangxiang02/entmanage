@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/' >
+
+   <!--对于ConsoleAppender来说，在开发阶段还是比较有用的，能直接在ide中看到输出的日志内容，
+   但是在实际的产品阶段，我们更希望将日志输出到指定的文件上查看，这就需要用到FileAppender-->
+   <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+      <param name="encoding" value="UTF-8" />
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value="%d %-5p %t %l %X{prefix} %m%n" />
+      </layout>
+    <!--如果有过滤器，当前appender只会处理满足过滤器条件的日志信息-->
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+         <param name="levelMin" value="INFO" />
+         <param name="levelMax" value="FATAL" />
+         <param name="AcceptOnMatch" value="true" />
+      </filter> 
+   </appender>
+
+   <!-- 写到本地日志 -->
+   <!--第一步：配置appender-->
+   <appender name="INFO-LOCAL" class="org.apache.log4j.DailyRollingFileAppender">
+      <param name="file" value="E:/opt/logs/info.log" />
+      <param name="append" value="true" /><!--一般必须配置true，否则会覆盖而不是累加-->
+      <param name="encoding" value="UTF-8" />
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value="%d %-5p %t %l  %X{prefix}  %m%n" />
+      </layout>
+      <!--如果有过滤器，日志文件中就只会有符合过滤器的日志信息-->
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+         <param name="levelMin" value="INFO" />
+         <param name="levelMax" value="WARN" />
+         <param name="AcceptOnMatch" value="true" />
+      </filter> 
+   </appender>
+   
+   
+   <appender name="ERROR-LOCAL" class="org.apache.log4j.DailyRollingFileAppender">
+      <param name="file" value="E:/opt/logs/error.log" />
+      <param name="append" value="true" /><!--一般必须配置true，否则会覆盖而不是累加-->
+      <param name="encoding" value="UTF-8" />
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value="%d %-5p %t %l  %X{prefix}  %m%n" />
+      </layout>
+      <!--如果有过滤器，日志文件中就只会有符合过滤器的日志信息-->
+      <filter class="org.apache.log4j.varia.LevelRangeFilter">
+         <param name="levelMin" value="ERROR" />
+         <param name="levelMax" value="FATAL" />
+         <param name="AcceptOnMatch" value="true" />
+      </filter>
+   </appender>
+
+   <!--第二步：配置logger。
+ 	  如果不配置，系统会采用默认策略，即additivity="true"，level value="DEBUG"。
+   	注意：additivity=true，表示遵循缺省的继承机制，此时就不应该继续配置appender-ref，否则日志会出现重复
+   	相反，如果additivity=false，就必须要配置appender-ref，否则日志不会被打印，配置也就没有意义-->
+   <logger name="com.*" additivity="true">
+      <!--给具体的logger配置日志级别，比如com.test包下面日志级别大于等于DEBUG的，
+     	 才会交给appender进行处理。
+      	注意：对于com.test包而言，此处的级别会覆盖root下面的日志级别-->
+      <level value="INFO" />
+      <!--如果此处配置了append-ref,而且additivity="true"，将会和root里面的同一个
+      append-ref形成累加，即重复日志-->
+      <!--<appender-ref ref="CONSOLE" />-->
+      <!--<appender-ref ref="DEFAULT-LOCAL"/>-->
+      <!--<appender-ref ref="ERROR-LOCAL"/>-->
+   </logger>
+  <logger name="com.*" additivity="false">
+      <level value="INFO" />
+      <appender-ref ref="INFO-LOCAL" />
+   </logger>
+
+   <!--第三步：配置root-->
+   <!--root的作用是收集所有配置的logger反馈上来的信息流并根据配置在root中appender进行输出，
+   	只要你在looger中配置了additivity="false"，就不会反馈到root中。-->
+   <root>
+      <!--优先级小于具体的logger中配置的级别，只有当具体的logger没有配置的时候，
+      	这里才会对具体的looger起作用-->
+      <level value="DEBUG" />
+      <appender-ref ref="CONSOLE" />
+      <appender-ref ref="INFO-LOCAL" />
+      <appender-ref ref="ERROR-LOCAL"/>
+   </root>
+</log4j:configuration>  
