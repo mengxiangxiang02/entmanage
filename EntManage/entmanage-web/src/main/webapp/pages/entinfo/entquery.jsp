@@ -14,10 +14,27 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="row">
-                         <div class="row">
-                           <label>企业名:</label>
-                           <input type="text" placeholder="企业名称"  id="entName_params">
-                       	</div>
+					<div class='col-sm-3'>
+						<div class='input-group date' id='datetimepicker1' >
+							<input type='text' placeholder="请选择开始时间" class="form-control"  id="gmtCreateBegin_params"  />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+	                		</span>
+						</div>
+					</div>
+					<div class='col-sm-3'>
+						<!--指定 date标记-->
+						<div class='input-group date' id='datetimepicker2'>
+							<input type='text'  placeholder="请选择结束时间" class="form-control" id="gmtCreateEnd_params" />
+							<span class="input-group-addon">
+	                    		<span class="glyphicon glyphicon-calendar"></span>
+	                		</span>
+						</div>
+					</div>
+					<div class="form-group col-sm-3">
+						<input type="text" class="form-control" id="entName_params"  placeholder="企业名称">
+					</div>
+
 					<div class="col-sm-12">
                     	<div class="btn-group">
                            <button class="btn btn-success" type="button" onclick="queryUser()" data-toggle="modal">
@@ -63,13 +80,19 @@
 	<script>
 
 		var $entName_name="";
-		//初始化商户tab页数据
+        var $gmtCreateEnd="";
+        var $gmtCreateBegin="";
+
+        //初始化商户tab页数据
 		function initSysUsersData(){
             var userList= $('#sysUserList').dataTable({
 				"sAjaxSource" : path+"/ent/query.htm",
 				"fnServerParams": function(aoData){
 		        	aoData.push({"name":'entName',"value":$entName_name});
-		        },
+                    aoData.push({"name":'gmtCreateEnd',"value":$gmtCreateEnd});
+                    aoData.push({"name":'gmtCreateBegin',"value":$gmtCreateBegin});
+
+                },
 				 "bLengthChange": false, //改变每页显示数据数量
 		            "bFilter": false, //过滤功能
 		            "bProcessing": true, //开启读取服务器数据时显示正在加载中……特别是大数据量的时候，开启此功能比较好
@@ -146,7 +169,10 @@
 		}
 		function queryUser(){
             $entName_name=$('#entName_params').val();
-			$('#sysUserList').dataTable().fnReloadAjax();
+            $gmtCreateEnd=$('#gmtCreateEnd_params').val();
+            $gmtCreateBegin=$('#gmtCreateBegin_params').val();
+
+            $('#sysUserList').dataTable().fnReloadAjax();
 		}
 		//编辑商户
 		function editSysUser(type){
@@ -167,6 +193,16 @@
 		function FormatDate (date) {
 		    return date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate()+" "+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds() ;
 		}
+        $(function () {
+            $('#datetimepicker1').datetimepicker({
+                format: 'YYYY-MM-DD HH:mm:ss',
+                locale: moment.locale('zh-cn')
+            });
+            $('#datetimepicker2').datetimepicker({
+                format: 'YYYY-MM-DD HH:mm:ss',
+                locale: moment.locale('zh-cn')
+            });
+        });
 		//初始化
 		initSysUsersData();
 	</script>
