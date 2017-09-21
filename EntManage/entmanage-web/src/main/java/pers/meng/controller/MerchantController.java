@@ -6,14 +6,7 @@
  */
 package pers.meng.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,12 +14,15 @@ import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import net.sf.json.JSONObject;
 import pers.meng.daointerface.entInfoMapper;
 import pers.meng.domain.bean.entInfo;
 import pers.meng.param.BaseCtrl;
-import pers.meng.service.util.ConstructorMap;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 内部接口配置列表
@@ -99,23 +95,23 @@ public class MerchantController  extends BaseCtrl {
     
     /**
      * 添加或更新产品配置
-     * @param proconfig
+     * @param entInfo
      * @param req
      * @param model
      * @return
      */
     @RequestMapping(value = "/save",produces="text/html;charset=UTF-8")
     @ResponseBody
-    public String save( HttpServletRequest req,HttpServletResponse response, ModelMap model,entInfo proconfig) {
-        logger.info("save user info,tbUser:{}"+ proconfig);
+    public String save( HttpServletRequest req,HttpServletResponse response, ModelMap model,entInfo entInfo) {
+        logger.info("save user info,tbUser:{}"+ entInfo);
         Map<String, Object> result = new HashMap<String, Object>();
         result.put("msg", false);
         result.put("message", "操作失败！");
         try {
-            if (proconfig.getId() == -1) {
-                long id = entInfoMapper.insert(proconfig);
+            if (entInfo.getId() == -1) {
+                long id = entInfoMapper.insert(entInfo);
             } else {
-            	int updateFlag = entInfoMapper.updateByPrimaryKeySelective(proconfig);
+            	int updateFlag = entInfoMapper.updateByPrimaryKeySelective(entInfo);
             }
             result.put("msg", true);
             result.put("message", "操作成功！");

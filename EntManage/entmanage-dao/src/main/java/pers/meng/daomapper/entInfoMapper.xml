@@ -51,13 +51,32 @@
     studentclass, entwhite, remark, GMT_CREATE, GMT_MODIFIED
     from ent_info
     where 	1=1
+    <if test="entName != null and entName.trim() != ''">
+      and entname like concat('%', #{entName}, '%')
+    </if>
+    <if test="gmtCreateBegin != null and gmtCreateBegin.trim() != ''">
+      and GMT_CREATE &gt;= #{gmtCreateBegin}
+    </if>
+    <if test="gmtCreateEnd != null and gmtCreateEnd.trim() != ''">
+      and GMT_CREATE &lt;= #{gmtCreateEnd}
+    </if>
+
     limit ${pageOffset},${pageSize}
   </select>
 
   <select id="count" parameterType="map" resultType="int">
     select count(*)   from ent_info
-    where 1=1
-
+    where
+    1=1
+    <if test="entName != null and entName.trim() != ''">
+      and entname like concat('%', #{entName}, '%')
+    </if>
+    <if test="gmtCreateBegin != null and gmtCreateBegin.trim() != ''">
+      and GMT_CREATE &gt;= #{gmtCreateBegin}
+    </if>
+    <if test="gmtCreateEnd != null and gmtCreateEnd.trim() != ''">
+      and GMT_CREATE &lt;= #{gmtCreateEnd}
+    </if>
   </select>
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >

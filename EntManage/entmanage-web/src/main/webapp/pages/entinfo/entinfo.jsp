@@ -53,9 +53,9 @@
 							</div>
 							<label class="col-sm-2 control-label">是否黑名单企业：</label>
 							 <div class="col-sm-4">
-								 <select id ="entwhite"  name ="status" class="imput-md form-control">
-	                           			<option value="Y">有效</option>
-	                           			<option value="N">无效</option>
+								 <select id ="entwhite"  name ="entwhite" class="imput-md form-control">
+	                           			<option value="Y">是</option>
+	                           			<option value="N">否</option>
 	                           		</select>
 	                          </div> 			
 						</div>
@@ -97,7 +97,16 @@
 									   name="gmtModified">
 							</div>
 						</div>
-						
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label">备注：</label>
+							<div class="col-sm-8">
+								<input type="text" placeholder="备注" class="form-control"
+									   name="remark">
+							</div>
+						</div>
+
+
 
 					</div>
 				</div>
@@ -141,7 +150,7 @@
 	
 	function saveUserFun(){
 		if (editFlag == "true") { // 编辑页面数据初始化)
-			$("input[name=gmtCreate]").attr("value", new Date(entInfo.gmtCreate.time));
+			//$("input[name=gmtCreate]").attr("value", new Date(entInfo.gmtCreate.time));
 			$("input[name=gmtModified]").attr("value",new Date(entInfo.gmtModified.time));
 		}else
 		{
