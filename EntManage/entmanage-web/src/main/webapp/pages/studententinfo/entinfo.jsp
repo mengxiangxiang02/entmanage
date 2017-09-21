@@ -10,7 +10,7 @@
 				aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
-			<h4 class="modal-title">企业录入</h4>
+			<h4 class="modal-title">老学员公司维护</h4>
 		</div>
 		<form class="form-horizontal" id="sysUserForm">
 			<div class="modal-body">
@@ -30,11 +30,7 @@
 						</div>
 
 						<div class="form-group">
-							<label class="col-sm-2 control-label">企业人数：</label>
-							<div class="col-sm-4">
-								<input type="text" placeholder="企业人数" class="form-control"
-									   name="entperson">
-							</div>
+
 							<label class="col-sm-2 control-label">企业性质：</label>
 							<div class="col-sm-4">
 								<input type="text" placeholder="企业性质" class="form-control"
@@ -45,30 +41,17 @@
 
 
 
+
 						<div class="form-group">
-							<label class="col-sm-2 control-label">企业业务：</label>
+							<label class="col-sm-2 control-label">在职学员：</label>
 							<div class="col-sm-4">
-								<input type="text" placeholder="企业业务" class="form-control"
-									name="entbusiness">
-							</div>
-							<label class="col-sm-2 control-label">是否黑名单企业：</label>
-							 <div class="col-sm-4">
-								 <select id ="entwhite"  name ="entwhite" class="imput-md form-control">
-	                           			<option value="Y">是</option>
-	                           			<option value="N">否</option>
-	                           		</select>
-	                          </div>
-						</div>
-						<div class="form-group">
-							<label class="col-sm-2 control-label">面试学员：</label>
-							<div class="col-sm-4">
-								<input type="text" placeholder="面试学员" class="form-control"
+								<input type="text" placeholder="学员" class="form-control"
 									   name="interviewstudent">
 							</div>
-							<label class="col-sm-2 control-label">面试方向：</label>
+							<label class="col-sm-2 control-label">学员班级：</label>
 							<div class="col-sm-4">
-								<input type="text" placeholder="面试方向" class="form-control"
-									   name="interviewaspect">
+								<input type="text" placeholder="学员班级" class="form-control"
+									   name="studentclass">
 							</div>
 						</div>
 
@@ -79,11 +62,7 @@
 								<input type="text" placeholder="序列号" class="form-control"
 									   name="id">
 							</div>
-							<label class="col-sm-2 control-label">学员班级：</label>
-							<div class="col-sm-4">
-								<input type="text" placeholder="学员班级" class="form-control"
-									   name="studentclass">
-							</div>
+
 						</div>
 
 
@@ -107,14 +86,10 @@
 		var entInfo = ${entInfo};
         $("input[name=entname]").attr("value", entInfo.entname);
         $("input[name=entlocation]").attr("value", entInfo.entlocation);
-        $("input[name=entbusiness]").attr("value", entInfo.entbusiness);
-        $("input[name=entperson]").attr("value", entInfo.entperson);
         $("input[name=enttype]").attr("value", entInfo.enttype);
         $("input[name=interviewstudent]").attr("value", entInfo.interviewstudent);
-        $("input[name=interviewaspect]").attr("value", entInfo.interviewaspect);
         $("input[name=studentclass]").attr("value", entInfo.studentclass);
 
-        $("#entwhite").val(entInfo.entwhite);
 		var createdate=new Date(entInfo.gmtCreate.time);
 		$("input[name=gmtCreate]").attr("value",FormatDate(createdate)).attr("readOnly", "true");
 		var gmtModified=new Date(entInfo.gmtModified.time);
@@ -137,7 +112,7 @@
 			$("input[name=gmtCreate]").attr("value",new Date());
 		}
 		var sysUser_options = {
-			url : path + '/ent/save.htm',
+			url : path + '/studentent/save.htm',
 			type : 'post',
 			dataType : 'json',
 			//data:{'roles':$("#roles").val()},  //额外的参数...

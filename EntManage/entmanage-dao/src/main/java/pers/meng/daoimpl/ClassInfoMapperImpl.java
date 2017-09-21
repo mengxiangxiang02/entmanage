@@ -9,14 +9,14 @@ import pers.meng.domain.bean.ClassInfo;
 
 import java.util.List;
 import java.util.Map;
-@Repository("ClassInfoMapper")
+@Repository("classInfoMapper")
 public class ClassInfoMapperImpl implements ClassInfoMapper {
     @Autowired
     @Qualifier("sqlSession")
     private SqlSessionTemplate sqlSession;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return sqlSession.delete("pers.meng.daoinerface.ClassInfoMapper.deleteByPrimaryKey", id);
+        return sqlSession.delete("pers.meng.daointerface.ClassInfoMapper.deleteByPrimaryKey", id);
     }
 
     @Override
@@ -26,17 +26,17 @@ public class ClassInfoMapperImpl implements ClassInfoMapper {
 
     @Override
     public int insertSelective(ClassInfo record) {
-        return sqlSession.insert("pers.meng.daoinerface.ClassInfoMapper.insertSelective",record);
+        return sqlSession.insert("pers.meng.daointerface.ClassInfoMapper.insertSelective",record);
     }
 
     @Override
     public ClassInfo selectByPrimaryKey(Integer id) {
-        return (ClassInfo)sqlSession.selectOne("pers.meng.daoinerface.ClassInfoMapper.selectByPrimaryKey", id);
+        return (ClassInfo)sqlSession.selectOne("pers.meng.daointerface.ClassInfoMapper.selectByPrimaryKey", id);
     }
 
     @Override
     public int updateByPrimaryKeySelective(ClassInfo record) {
-        return sqlSession.update("pers.meng.daoinerface.ClassInfoMapper.updateByPrimaryKeySelective",record);
+        return sqlSession.update("pers.meng.daointerface.ClassInfoMapper.updateByPrimaryKeySelective",record);
     }
 
     @Override
@@ -46,11 +46,11 @@ public class ClassInfoMapperImpl implements ClassInfoMapper {
 
     @Override
     public List<ClassInfo> selectByContion(Map map) {
-        return (List<ClassInfo>)sqlSession.selectList("pers.meng.daoinerface.ClassInfoMapper.selectByContion", map);
+        return (List<ClassInfo>)sqlSession.selectList("pers.meng.daointerface.ClassInfoMapper.selectByContion", map);
     }
 
     @Override
     public int selectCount(Map map) {
-        return (int)sqlSession.selectOne("pers.meng.daoinerface.ClassInfoMapper.count", map);
+        return (int)sqlSession.selectOne("pers.meng.daointerface.ClassInfoMapper.count", map);
     }
 }

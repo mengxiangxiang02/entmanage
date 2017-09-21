@@ -89,7 +89,32 @@
 	                                	企业信息维护
 	                                </a>
 	                            </li>
+                                 <li>
+                                     <a class="J_menuItem" href="pages/studententinfo/studententquery.jsp" data-index="0">
+                                         <i class="fa fa-soundcloud"></i>
+                                         老学员公司查询
+                                     </a>
+                                 </li>
 	                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa  fa-folder"></i>
+                            <span class="nav-label">班级管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="pages/classinfo/classquery.jsp" data-index="0">
+                                    <i class="fa fa-soundcloud"></i>
+                                    班级信息维护
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </nav>

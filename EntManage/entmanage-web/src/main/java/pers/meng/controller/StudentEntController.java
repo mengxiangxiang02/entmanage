@@ -14,10 +14,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import pers.meng.daoimpl.studententInfoMapperImpl;
 import pers.meng.daointerface.entInfoMapper;
 import pers.meng.domain.bean.entInfo;
 import pers.meng.param.BaseCtrl;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
@@ -28,12 +30,12 @@ import java.util.Map;
  * 内部接口配置列表
  */
 @Controller
-@RequestMapping("/ent")
-public class MerchantController  extends BaseCtrl {
-	public final static Logger logger = Logger.getLogger(MerchantController.class);
+@RequestMapping("/studentent")
+public class StudentEntController extends BaseCtrl {
+	public final static Logger logger = Logger.getLogger(StudentEntController.class);
 
     @Autowired
-    private entInfoMapper entInfoMapper;
+    private studententInfoMapperImpl studententInfoMapper;
 
 
     /**
@@ -56,8 +58,8 @@ public class MerchantController  extends BaseCtrl {
         map.put("pageSize", limit + "");
         map.put("pageOffset", (startIndex)*limit + "");
         logger.info(map);
-        List<entInfo> entInfos = entInfoMapper.selectByContion(map);
-        int i = entInfoMapper.selectCount(map);
+        List<entInfo> entInfos = studententInfoMapper.selectByContion(map);
+        int i = studententInfoMapper.selectCount(map);
         //设置返回记录and总记录数
         model.put("aaData", entInfos);
         model.put("iTotalRecords",  i);
@@ -80,14 +82,14 @@ public class MerchantController  extends BaseCtrl {
         if(id!=0)
         {
         	isEditFlag = true;
-        	pdo= entInfoMapper.selectByPrimaryKey(id);
+        	pdo= studententInfoMapper.selectByPrimaryKey(id);
         }
         JSONObject json = JSONObject.fromObject(pdo);
         String str = json.toString();//将json对象转换为字符串  
         logger.info("entInfo:"+str);
         modelMap.addAttribute("entInfo",str);
         modelMap.addAttribute("isEdit", isEditFlag);
-        String view = "pages/entinfo/entinfo";
+        String view = "pages/studententinfo/entinfo";
         logger.info("showUserManagePage view url = {}"+ view);
         
         return view;
@@ -107,11 +109,25 @@ public class MerchantController  extends BaseCtrl {
         Map<String, Object> result = new HashMap<String, Object>();
         result.put("msg", false);
         result.put("message", "操作失败！");
+        String account=null;
+        Cookie[] cookies = req.getCookies();//根据请求数据，找到cookie数组
+        if (null==cookies) {//如果没有cookie数组
+            return  result.toString();
+        } else {
+            for(Cookie cookie : cookies){
+                if(cookie.getName().equals("userName"))
+                {
+                    account=cookie.getValue();
+                }
+            }
+        }
+        entInfo.setRemark(account);
+
         try {
             if (entInfo.getId() == -1) {
-                long id = entInfoMapper.insert(entInfo);
+                long id = studententInfoMapper.insertSelective(entInfo);
             } else {
-            	int updateFlag = entInfoMapper.updateByPrimaryKeySelective(entInfo);
+            	int updateFlag = studententInfoMapper.updateByPrimaryKeySelective(entInfo);
             }
             result.put("msg", true);
             result.put("message", "操作成功！");
