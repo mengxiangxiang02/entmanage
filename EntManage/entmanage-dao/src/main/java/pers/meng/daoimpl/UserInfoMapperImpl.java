@@ -30,20 +30,21 @@ public class UserInfoMapperImpl implements UserInfoMapper {
 	@Override
 	public int insertSelective(UserInfo record) {
 		// TODO Auto-generated method stub
-		return 0;
+
+		return sqlSession.insert("pers.meng.daointerface.UserInfoMapper.insertSelective",record);
 	}
 
 	@Override
 	public UserInfo selectByPrimaryKey(Integer id) {
 		// TODO Auto-generated method stub
-		return (UserInfo)sqlSession.selectOne("pers.meng.daoinerface.UserInfoMapper.selectByPrimaryKey", id);
+		return (UserInfo)sqlSession.selectOne("pers.meng.daointerface.UserInfoMapper.selectByPrimaryKey", id);
 	}
 
 	
 	
 	@Override
 	public int updateByPrimaryKeySelective(UserInfo record) {
-		return sqlSession.update("pers.meng.daoinerface.UserInfoMapper.updateByPrimaryKeySelective",record);
+		return sqlSession.update("pers.meng.daointerface.UserInfoMapper.updateByPrimaryKeySelective",record);
 	}
 
 	@Override
@@ -55,7 +56,7 @@ public class UserInfoMapperImpl implements UserInfoMapper {
 	@Override
 	public UserInfo selectByUserid(String userid) {
 		// TODO Auto-generated method stub
-		return (UserInfo)sqlSession.selectOne("pers.meng.daoinerface.UserInfoMapper.selectByUserid", userid);
+		return (UserInfo)sqlSession.selectOne("pers.meng.daointerface.UserInfoMapper.selectByUserid", userid);
 	}
 	@Override
 	public List<UserInfo> selectByContion(Map map) {
