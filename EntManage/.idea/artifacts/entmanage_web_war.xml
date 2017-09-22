@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="entmanage-web:war">
-    <output-path>$PROJECT_DIR$/entmanage-web/target</output-path>
-    <root id="archive" name="entmanage-web.war">
-      <element id="artifact" artifact-name="entmanage-web:war exploded" />
-    </root>
-  </artifact>
-</component>
